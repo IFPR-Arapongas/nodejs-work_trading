@@ -4,6 +4,7 @@
     padding: 2px;
     box-sizing:content-box;
     text-align: right;
+    grid-template-columns:repeat(5, 1000px)
 }
 
 body {
@@ -89,7 +90,7 @@ nav a:hover {
 }
 
 .product h3 {
-    text-align: left;
+    text-align: right;
     font-size: 1.2rem;
     margin: 12px;
 }
@@ -204,18 +205,24 @@ footer a:hover {
 }
 
   .container{
-display: grid;
-    grid-template-columns: repeat(4, 150px);
-    background-color: #5a796f;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color:#bababa;
     justify-items: center;
-    justify-content: space-around;
+    justify-content: end;
     align-items: stretch;
     margin: 15px;
   }
 
+  .container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: #bababa;
+  }
+
   .item-menu{
-    padding: 20px;
-    margin: 20px;
+    margin: 0px;
   }
 
   .item-cabeçalho{
