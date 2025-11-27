@@ -204,6 +204,76 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+main {
+    width: 60%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+form {
+    background-color: lightblue;
+    
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+
+    label {
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    input {
+        margin: 10px 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        margin: 5px 0 20px;
+        transition: all .5s;
+
+        &:focus {
+            outline: none;
+            background-color: rgb(227, 218, 218);
+        }
+    }
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
+
+    .card {
+        background-color: lightblue;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 30px 15px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    
+    }
+}
+
+button {
+    background-color: rgb(119, 159, 173);
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+}
   .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -241,4 +311,10 @@ footer a:hover {
   .item-vagas{
     background-color: #5a796f;
     padding: 10px;
+    height: 400px;
+  }
+
+  form{
+    padding: 20px;
+    border: solid 5px;
   }
