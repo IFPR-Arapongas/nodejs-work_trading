@@ -3,10 +3,6 @@
     margin: 5px;
     padding: 2px;
     box-sizing:content-box;
-<<<<<<< HEAD
-=======
-    text-align: left;
->>>>>>> 02163502e23ae00fadb26a26627aa5a21af89627
     grid-template-columns:repeat(5, 1000px)
 }
 
@@ -316,7 +312,7 @@ button {
   .item-vagas{
     background-color: #5a796f;
     padding: 10px;
-    height: 400px;
+    height: 800px;
   }
 
   form{
