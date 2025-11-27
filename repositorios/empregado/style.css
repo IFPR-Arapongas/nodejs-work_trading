@@ -217,8 +217,9 @@ footer a:hover {
   .container2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
     background-color: #bababa;
+    justify-items: center;
+    align-items: center;
   }
 
   .item-menu{
