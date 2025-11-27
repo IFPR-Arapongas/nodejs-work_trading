@@ -3,6 +3,10 @@
     margin: 5px;
     padding: 2px;
     box-sizing:content-box;
+<<<<<<< HEAD
+=======
+    text-align: left;
+>>>>>>> 02163502e23ae00fadb26a26627aa5a21af89627
     grid-template-columns:repeat(5, 1000px)
 }
 
@@ -200,7 +204,7 @@ footer a {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: unset;
 }
 
 
@@ -209,7 +213,7 @@ main {
     margin: 0 auto;
 
     h2 {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -220,11 +224,12 @@ form {
     flex-direction: column;
     width: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 50px;
+    text-align: left;
 
     label {
         font-size: 14px;
-        font-weight: bold;
+        font-weight: bolder;
         color: rgba(0, 0, 0, 0.7);
     }
 
@@ -234,10 +239,11 @@ form {
         border-radius: 5px;
         border: none;
         margin: 5px 0 20px;
-        transition: all .5s;
+        transition: none .5s;
+        text-align: left;
 
         &:focus {
-            outline: none;
+            outline: auto;
             background-color: rgb(227, 218, 218);
         }
     }
