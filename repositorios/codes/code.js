@@ -2,7 +2,7 @@ document.querySelector('from button').addEventListener('submit', () => {
     const form = document.querySelector('form')
 
     const formData = new FormData(form)
-    const { nome, email, idade, cidade} = Object.fromEntries(formData.entries())
+    const { nome, email, idade, cidade, informacoes} = Object.fromEntries(formData.entries())
 
     console.log(nome, idade)
 
@@ -22,6 +22,9 @@ document.querySelector('from button').addEventListener('submit', () => {
     const pcidade = document.createElement('p')
     pcidade.textContent = `Cidade: ${cidade}`
 
+    const pinformacoes = document.createElement('p')
+    pinformacoes.textContent = `Informações: ${informacoes}`
+
     
     const button = document.createElement
     button.textContent = 'Remover'
@@ -29,7 +32,7 @@ document.querySelector('from button').addEventListener('submit', () => {
         console.log(e.target.parentElement)
     })
 
-    card.append(pnome, pemail, pidade, pcidade)
+    card.append(pnome, pemail, pidade, pcidade, pinformacoes)
 
     document,querySelector('.info').append(card)
 })
