@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="code"></script>
+    <script src="code.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>A Procura de Emprego</title>
 </head>
@@ -14,13 +14,12 @@
         <div>Megalovânia</div>
     <div class="container">
         <div class="item-menu"> <a href="index.html">Início</a> </div>
-        <div class="item-menu"> <a scr="sobre.html">Sobre nós</a> </div>
-        <div class="item-menu"> <a src="servicos.html">Serviços</a> </div>
-        <div class="item-menu"> <a src="contato.html">Contato</a> </div>
+        <div class="item-menu"> <a href="sobre.html">Sobre nós</a> </div>
+        <div class="item-menu"> <a href="servicos.html">Serviços</a> </div>
+        <div class="item-menu"> <a href="contato.html">Contato</a> </div>
 
     </div> 
     </div>
-    </body>
 
 
     <div class="item-cabeçalho">
@@ -33,24 +32,24 @@
     <div class="item-vagas">
 
         <main>
-            <form >
+            <form>
 
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" id="nome">
 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="text" name="email" id="email">
 
                 <label for="idade">Idade</label>
-                <input type="idade" name="idade" id="idade">
+                <input type="number" name="idade" id="idade">
 
                 <label for="cidade">Cidade</label>
-                <input type="cidade" name="cidade" id="cidade">
+                <input type="text" name="cidade" id="cidade">
 
                 <label for="informacoes">Informações</label>
                 <textarea name="informacoes" id="informacoes">informacoes</textarea>
 
-                <button>Adicionar</button>
+                <button type="submit">Adicionar</button>
             </form>
         </main>
     </div>

@@ -1,4 +1,4 @@
-   /* Reset básico */
+
    * {
     margin: 5px;
     padding: 2px;
@@ -11,13 +11,11 @@ body {
     background-color: #000000;
     line-height: 2.2rem;
     background-color: #000000;
-    text-align: right;
 }
 
 header {
     background-color: #000000;
     padding: 3.5rem;
-    text-align: right;
 }
 
 form {
@@ -58,6 +56,7 @@ form {
     flex-wrap: wrap;
     justify-content: center;
 
+
     .card {
         background-color: lightblue;
         border: 1px solid rgba(0, 0, 0, 0.1);
@@ -67,6 +66,7 @@ form {
     
     }
 }
+
 
 button {
     background-color: rgb(119, 159, 173);
