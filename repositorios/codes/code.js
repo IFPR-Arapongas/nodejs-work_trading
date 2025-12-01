@@ -1,4 +1,5 @@
-document.querySelector('from button').addEventListener('submit', () => {
+document.querySelector('from button').addEventListener('submit', (e) => {
+    e.preventDefault()
     const form = document.querySelector('form')
 
     const formData = new FormData(form)
@@ -26,7 +27,7 @@ document.querySelector('from button').addEventListener('submit', () => {
     pinformacoes.textContent = `Informações: ${informacoes}`
 
     
-    const button = document.createElement
+    const button = document.createElement('button')
     button.textContent = 'Remover'
     button.addEventListener('click', (e) => {
         console.log(e.target.parentElement)
@@ -36,7 +37,3 @@ document.querySelector('from button').addEventListener('submit', () => {
 
     document,querySelector('.info').append(card)
 })
-
-
-
-/**/ 

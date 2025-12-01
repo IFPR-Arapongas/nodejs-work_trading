@@ -20,6 +20,7 @@ header {
     text-align: right;
 }
 
+<<<<<<< HEAD
 header h1 {
     font-size: 50rem;
 }
@@ -213,6 +214,8 @@ main {
     }
 }
 
+=======
+>>>>>>> 3c75af8e5fc2d5d819724884e29ba1277cf96f23
 form {
     background-color: lightblue;
     
@@ -312,7 +315,7 @@ button {
   .item-vagas{
     background-color: #5a796f;
     padding: 10px;
-    height: 400px;
+    height: 800px;
   }
 
   form{
