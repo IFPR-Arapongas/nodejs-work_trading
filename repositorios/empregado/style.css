@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Corpo da página */
@@ -72,6 +71,7 @@ form {
   margin: auto;
   display: flex;
   flex-direction: column;
+  align-content: center;
   gap: 12px;
 }
 
@@ -117,7 +117,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  box-sizing: content-box;
 }
 
 .info .card {
