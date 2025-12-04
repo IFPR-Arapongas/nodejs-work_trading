@@ -8,14 +8,13 @@
 /* Corpo da página */
 body {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
-  background-color: #000;
-  color: #fff;
+  background-color: #F2F2F2;
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-  background-color: #bababa;
+  background-color: #DCD0A8;
   padding: 10px 0;
 }
 
@@ -25,12 +24,12 @@ header {
   grid-template-columns: 150px auto;
   align-items: center;
   padding: 10px;
-  background-color: #bababa;
+  background-color: #DCD0A8;
 }
 
 .class-imagem {
-  display: flex;
   justify-content: center;
+  padding-left: 100%;
 }
 
 /* MENU */
@@ -39,6 +38,7 @@ header {
   gap: 20px;
   justify-content: flex-end;
   align-items: center;
+  padding-right: 10%;
 }
 
 .item-menu a {
@@ -55,7 +55,7 @@ header {
 .item-cabecalho,
 .item-conteudo,
 .item-vagas {
-  background-color: #bababa;
+  background-color: #D9CFC7;
   padding: 20px;
   margin: 20px 0;
   border-radius: 8px;
@@ -64,9 +64,9 @@ header {
 
 /* Formulário */
 form {
-  background-color: #c7c7c7;
+  background-color: #D9CFC7;
   padding: 20px;
-  border: solid 3px #999;
+  border: solid 3px #D9CFC7;
   border-radius: 10px;
   width: 50%;
   margin: auto;
@@ -99,7 +99,7 @@ form textarea:focus {
 
 /* Botão */
 button {
-  background-color: rgb(119, 159, 173);
+  background-color: rgb(230, 216, 195);
   padding: 12px;
   border-radius: 10px;
   border: none;
@@ -135,6 +135,19 @@ button:hover {
   min-height: 500px;
 }
 
-.class-imagem {
-  padding-right: 20%;
+.item-cabecalho{
+  padding: 50px;
+}
+
+.login{
+  padding: 150px;
+  margin-top: 150px;
+  margin-left: 42%;
+  margin-right: 42%;
+  height: 2%;
+  width: 10%;
+  background-color: rgb(139, 145, 139);
+  border: 2px solid black;
+  border-radius: 15px;
+
 }
