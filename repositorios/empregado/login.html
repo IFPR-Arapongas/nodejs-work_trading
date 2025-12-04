@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +16,31 @@
             </div>
 
             <nav class="container">
-                <div class="item-menu"><a href="index.html">Início</a></div>
-                <div class="item-menu"><a href="login.html">Login</a></div>
-                <div class="item-menu"><a href="servicos.html">Serviços</a></div>
-                <div class="item-menu"><a href="contato.html">Contato</a></div>
+                <ul class="menu-lista">
+                    <li class="item-menu"><a href="index.html">Início</a></li>
+                    <li class="item-menu"><a href="login.html">Login</a></li>
+                    <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+                    <li class="item-menu"><a href="contato.html">Contato</a></li>
+                </ul>
             </nav>
 
         </div>
     </header>
 
     <main>
-        <div class="login">
+        <section class="login">
             <img src="imagens/mega 3.png" alt="Logo Mega" width="150" style="padding-bottom: 60px;">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="password">Password:</label>
-            <input type="text" name="password" id="password">
-            <button>Confirmar</button>
-        </div>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" name="password" id="password" required>
+
+                <button type="submit">Confirmar</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>

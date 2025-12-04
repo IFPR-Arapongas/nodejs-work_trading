@@ -1,24 +1,24 @@
-/* Reset e ajustes básicos */
+/* RESET*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* BODY*/
 body {
   font-family: 'Roboto', 'Times New Roman', Times, serif;
   background-color: #F2F2F2;
   line-height: 1.6;
+  color: #000;
 }
 
-/* Cabeçalho */
+/* HEADER*/
 header {
   background-color: #DCD0A8;
   padding: 10px 0;
 }
 
-/* Layout do header */
 .container2 {
   display: grid;
   grid-template-columns: 150px auto;
@@ -28,11 +28,11 @@ header {
 }
 
 .class-imagem {
+  display: flex;
   justify-content: center;
-  padding-left: 100%;
 }
 
-/* MENU */
+/* MENU*/
 .container {
   display: flex;
   gap: 20px;
@@ -41,17 +41,24 @@ header {
   padding-right: 10%;
 }
 
+.menu-lista {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
 .item-menu a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .item-menu a:hover {
   text-decoration: underline;
 }
 
-/* Seções gerais */
+/* SEÇÕES GERAIS*/
 .item-cabecalho,
 .item-conteudo,
 .item-vagas {
@@ -59,10 +66,13 @@ header {
   padding: 20px;
   margin: 20px 0;
   border-radius: 8px;
-  color: #000;
 }
 
-/* Formulário */
+.item-cabecalho {
+  padding: 50px;
+}
+
+/* FORMULÁRIO*/
 form {
   background-color: #D9CFC7;
   padding: 20px;
@@ -78,7 +88,6 @@ form {
 form label {
   font-size: 14px;
   font-weight: bold;
-  color: #222;
 }
 
 form input,
@@ -86,7 +95,6 @@ form textarea {
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid #aaa;
-  margin-bottom: 10px;
   transition: 0.3s;
 }
 
@@ -97,7 +105,7 @@ form textarea:focus {
   background-color: #eee;
 }
 
-/* Botão */
+/* BOTÃO */
 button {
   background-color: rgb(230, 216, 195);
   padding: 12px;
@@ -112,7 +120,7 @@ button:hover {
   filter: brightness(1.15);
 }
 
-/* Cards das informações */
+/* CARDS DE INFORMAÇÃO*/
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -127,26 +135,20 @@ button:hover {
   padding: 25px;
   width: 250px;
   box-shadow: 0 0 8px rgba(0, 0, 0, .2);
-  color: #000;
 }
 
-/* Ajustes adicionais */
+/* AJUSTES GERAIS*/
 .item-vagas {
   min-height: 500px;
 }
 
-.item-cabecalho{
-  padding: 50px;
-}
-
-.login{
+/* LOGIN BOX (da página login)*/
+.login {
   padding: 60px;
-  margin-top: 150px;
-  margin-left: 42%;
-  margin-right: 42%;
-  width: 15%;
+  margin: 150px auto;
+  width: 320px;
   background-color: rgb(139, 145, 139);
   border: 2px solid black;
   border-radius: 15px;
-
+  text-align: center;
 }
