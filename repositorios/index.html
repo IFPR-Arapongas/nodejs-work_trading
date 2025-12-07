@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="code.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="mega.png" type="image/png">
     <title>A Procura de Emprego</title>
 </head>
@@ -57,12 +57,18 @@
                 <label for="idade">Idade</label>
                 <input type="number" id="idade" name="idade" min="14" required>
 
-                <label for="cidade">Cidade</label>
+                <label for="cidade">Cidade, Bairro, Rua e Numero</label>
                 <input type="text" id="cidade" name="cidade" required>
 
+                <label for="graduacao">Graduação e Cursos</label>
+                <input type="text" id="graduacao" name="graduacao" required>
+
+                <label for="experiencia">Experiencia</label>
+                <textarea name="experiencia" id="experiencia"></textarea>
+                
                 <label for="informacoes">Informações</label>
                 <textarea id="informacoes" name="informacoes" placeholder="Digite mais detalhes aqui..." required></textarea>
-
+                
                 <button type="submit">Adicionar</button>
 
             </form>
