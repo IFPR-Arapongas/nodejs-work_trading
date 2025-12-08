@@ -1,46 +1,45 @@
-import express from 'express'
-import { getFornecedor, getFornecedor, createFornecedor, removeFornecedor, updateFornecedor } from './db.js';
-const app = express()
+import mysql from "mysql2/promise";
 
-app.use((req, res, next) => { 
-    console.log(`[${new Date().toLocaleString()}] ${req.method} ${req.url}`);
-    next(); 
-})
+const db = await mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "meubanco"
+});
 
-app.use(express.static('public'))
+console.log("Banco de dados conectado!");
 
-app.use(express.json())
+export default db;
 
-app.get('/Fornecedor', async (req, res) => {
-    const Fornecedor = await getFornecedor()
-    res.status(200).json(Fornecedor)
-})
+// Funções do CRUD
+export async function getFornecedor(id = null) {
+    if (id) {
+        const [rows] = await db.query("SELECT * FROM fornecedores WHERE id = ?", [id]);
+        return rows[0];
+    }
+    const [rows] = await db.query("SELECT * FROM fornecedores");
+    return rows;
+}
 
-app.get('/Fornecedor/:id', async (req, res) => {
-    const id = req.params.id;
-    const Fornecedor = await getFornecedor(id)
-    res.send(Fornecedor)
-})
+export async function createFornecedor(data) {
+    const { nome, email } = data;
+    const [result] = await db.query(
+        "INSERT INTO fornecedores (nome, email) VALUES (?, ?)",
+        [nome, email]
+    );
+    return result.insertId;
+}
 
-app.post('/Fornecedor', async (req, res) => {
-    const Fornecedor = req.body
-    const id = await createFornecedor(Fornecedor)
-    res.status(201).send({ "message": `Criado o usuário ${Fornecedor.nome} ID: ${id}` })
-})
+export async function removeFornecedor(id) {
+    const [result] = await db.query("DELETE FROM fornecedores WHERE id = ?", [id]);
+    return result;
+}
 
-app.delete('/Fornecedor/:id', async (req, res) => {
-    const id = req.params.id
-    const results = await removeFornecedor(id)
-    res.status(200).send({"mensagem": `Usuário removido com sucesso.`})
-})
-
-app.put('/Fornecedor/:id', async (req, res) => {
-    const Fornecedor = req.body
-    const id = req.params.id
-    const results = await updateFornecedor(id, Fornecedor)
-    res.status(200).send({"mensagem" : `Usuário ${Fornecedor.nome} ID ${id} foi atualizado.`})
-})
-
-app.listen(3000, () => {
-    console.log('Server running http://localhost:3000')
-})
+export async function updateFornecedor(id, data) {
+    const { nome, email } = data;
+    const [result] = await db.query(
+        "UPDATE fornecedores SET nome = ?, email = ? WHERE id = ?",
+        [nome, email, id]
+    );
+    return result;
+}
