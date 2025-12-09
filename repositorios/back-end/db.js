@@ -4,7 +4,7 @@ const db = await mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
-    database: "meubanco"
+    database: "work_trading"
 });
 
 console.log("Banco de dados conectado!");

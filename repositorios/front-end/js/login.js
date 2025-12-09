@@ -1,4 +1,5 @@
 import jwt from 'jsonwebtoken';
+import { verificarToken } from "../../back-end/auth.js";
 
 const SECRET = "minha_chave_secreta"; // coloque isso no .env
 
@@ -19,7 +20,6 @@ app.post('/login', (req, res) => {
     return res.status(401).json({ error: "Credenciais inválidas" });
 });
 
-import { verificarToken } from "./auth.js";
 
 app.get('/dados-secretos', verificarToken, (req, res) => {
     res.json({
