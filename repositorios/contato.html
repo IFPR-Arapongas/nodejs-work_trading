@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <script src="code2.js" defer></script>
+    <link rel="stylesheet" href="css\style.css">
+    <title>A Procura de Emprego</title>
 </head>
+<body>
+    <header>
+        <div class="container2">
+
+            <div class="class-imagem">
+                <img src="/repositorios/imagens/mega 3.png" alt="Logo Mega" width="150">
+            </div>
+
+            <nav class="container">
+                <ul class="menu-lista">
+                    <li class="item-menu"><a href="index.html">Início</a></li>
+                    <li class="item-menu"><a href="login.html">Login</a></li>
+                    <li class="item-menu"><a href="servicos.html">Serviços</a></li>
+                    <li class="item-menu"><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
 <body>
     <main>
         <section class="item-vagas">
 
             <form>
 
-                <label for="nome">Nome</label>
+                <label for="name">Nome</label>
                 <input type="text" id="nome" name="nome" required>
 
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="idade">Idade</label>
-                <input type="number" id="idade" name="idade" min="14" required>
+                <label for="phone-number">Telefone</label>
+                <input type="tel" id="" name="Telefone"  required>
 
-                <label for="cidade">Cidade, Bairro, Rua e Numero</label>
-                <input type="text" id="cidade" name="cidade" required>
-
-                <label for="graduacao">Graduação e Cursos</label>
-                <input type="text" id="graduacao" name="graduacao" required>
-
-                <label for="experiencia">Experiencia</label>
-                <textarea name="experiencia" id="experiencia"></textarea>
-                
-                <label for="informacoes">Informações</label>
-                <textarea id="informacoes" name="informacoes" placeholder="Digite mais detalhes aqui..." required></textarea>
-                
                 <button type="submit">Adicionar</button>
 
             </form>
