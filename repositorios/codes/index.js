@@ -4,7 +4,7 @@ form.addEventListener('submit', (e) => {
     console.log("entries")
 
     const formData = new FormData(form)
-    const { nome, email, idade, cidade, informacoes,graduacao ,experiencia} = Object.fromEntries(formData.entries())
+    const { nome, email, idade, cidade, informacoes, graduacao, experiencia} = Object.fromEntries(formData.entries())
 
     console.log(nome, idade)
 
@@ -25,7 +25,7 @@ form.addEventListener('submit', (e) => {
     pcidade.textContent = `Cidade: ${cidade}`
 
     const pgraduacao = document.createElement('p')
-    pgraduacao.textContent = `Graduacao: ${graduacao}`
+    pgraduacao.textContent = `Graduação: ${graduacao}`
 
     const pexperiencia = document.createElement('p')
     pexperiencia.textContent = `Experiencia: ${experiencia}`
@@ -41,7 +41,7 @@ form.addEventListener('submit', (e) => {
         e.target.parentElement.remove()
     })
 
-    div.append(pnome, pemail, pidade, pcidade, pinformacoes, experiencia, graduacao)
+    div.append(pnome, pemail, pidade, pcidade, pinformacoes, pexperiencia, pgraduacao)
 
     document.querySelector('.info').append(div)
 })

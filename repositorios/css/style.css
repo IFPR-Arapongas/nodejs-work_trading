@@ -129,7 +129,7 @@ button:hover {
 }
 
 .info .card {
-  background-color: lightblue;
+  background-color: rgb(255, 255, 255);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 25px;
